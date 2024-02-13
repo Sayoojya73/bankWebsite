@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title></title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/000/348/687/large_2x/bank-vector-icon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   
+<nav class="navbar bg-body-tertiary m-0 p-0" >
+    <div class="container-fluid m-0 p-3" style=" background-color: rgb(162, 123, 109);">
+      <h1 class="navbar-brand" href="#" style="font-weight: bolder; color: white;">MY BANK</h1>
+
+      <button class="btn btn-danger" style="float: right; font-weight: bolder;" onclick="logOut()"> Logout</button>
+    </div>
+  </nav>
+
+
+  <div class="row">
+    <div class="col-6 p-5">
+        <form class="depform p-5">
+          <div class="p-5" style=" background-color: rgb(162, 123, 109);  border-radius: 20px;">
+          <h2 class="text-center mb-5" style="color: white;">DEPOSIT AMOUNT</h2>
+            <input id="damount" type="text" class="form-control" placeholder="Enter the amount"><br>
+            <input id="dpassword" type="text" class="form-control" placeholder="Enter your password">
+        </form><br>
+ <div>
+<button onclick="deposit()" class="btn btn-info  form-control" style="background-color: rgb(240, 99, 11); font-weight: bolder;" >Deposit </button><br><br>
+
+<h4 id="head" class="text-center"></h4></div>
+    </div>
+
+    
+
+
+</div>
+    <div class="col-6 p-5">
+
+      <form class="withdrawform p-5">
+        <div class="p-5" style=" background-color: rgb(162, 123, 109);  border-radius: 20px;">
+        <h2 class="text-center mb-5" style="color: white;">WITHDRAW AMOUNT</h2>
+        <input id="wamount" type="text" class="form-control" placeholder="Enter the amount"><br>
+        <input id="wpassword" type="text" class="form-control" placeholder="Enter your password">
+    </form><br>
+<div>
+<button onclick="withdraw()" class="btn btn-info form-control" style="background-color: rgb(240, 99, 11); font-weight: bolder;">Withdraw </button><br><br>
+<h4 id="head1" class="text-center"></h4></div>
+</div>
+
+
+    </div>
+  </div>
+  
+  
+    <script src="./script.js"></script>
+</body>
+</html>
